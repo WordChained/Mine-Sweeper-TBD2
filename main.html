@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤯Mine Sweeper</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="init()">
+    <div class="box">
+        <div>
+            <h3 class="headline">choose difficulty</h3>
+            <input class="difficultyBtns" onclick="difficulty(this)" type="radio" name="choice" value="easy" checked>Easy
+            <input class="difficultyBtns" onclick="difficulty(this)" type="radio" name="choice" value="Medium">Medium
+            <input class="difficultyBtns" onclick="difficulty(this)" type="radio" name="choice" value="Hard">Hard
+        </div>
+        <table>
+            <thead>
+                <div class="timer">
+                    <span id="timer">TIMER</span>
+                </div>
+                <button onclick="restartBtn(this)">
+                    😃
+                </button>
+
+            </thead>
+            <tbody class="board">
+
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

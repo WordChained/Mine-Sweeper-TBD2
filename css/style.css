@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(228, 174, 94);
+}
+
+.box {
+    height: 800px;
+    background: rgba(146, 32, 32, 0.13);
+    border-radius: 7px;
+    border: 2px solid black
+}
+
+.board {
+    /* margin: 70px; */
+    position: absolute;
+    display: block;
+    border: solid black 2px;
+}
+
+td {
+    height: 60px;
+    width: 60px;
+    border: solid black 2px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2em;
+}
+
+td::after {
+    /* box-shadow: inset; */
+    background-color: rgba(153, 98, 27, 0.733);
+}
+
+td:hover {
+    background-color: rgba(250, 235, 215, 0.733);
+}
+
+.timer {
+    margin: 5px;
+    border: solid black 2px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+button {
+    margin-left: 20;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 2em;
+    outline-width: 0;
+}
+
+span {
+    visibility: inherit;
+}
+
+.difficulty {
+    display: block;
+    height: 90px;
+    width: 280px;
+    border: solid black 3px;
+    margin: 5px;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 7px;
+    background-color: turquoise
+}
