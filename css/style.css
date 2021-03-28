@@ -41,7 +41,7 @@ body {
     display: block;
     margin-top: 80px;
     border: solid rgb(119, 118, 118) 2px;
-    background-image: url("/img/background.png");
+    background-image: url("./img/background.png");
 }
 
 td {
