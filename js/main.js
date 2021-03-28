@@ -390,7 +390,7 @@ function showMines() {
 function getHint(click) {
     if (gGame.isOn && !isProcessing) {
 
-        click.innerHTML = `<img class = "hint" src = "/img/bulb.png">`
+        click.innerHTML = `<img class = "hint" src = "./img/bulb.png">`
         document.querySelector(`.${click.classList[0]} img`).style.cursor = 'default'
         click.removeAttribute('onclick')
         for (var i = 0; i < gMat.length; i++) {
@@ -413,7 +413,7 @@ function getHint(click) {
 function renderHints() {
     var strHtml = '';
     for (var i = 0; i < livesCounter; i++) {
-        strHtml += `<div class="hint${i+1}" onclick = "getHint(this)" style = "display: inline-block"><img class = "hint" src = "/img/lightbulb.png"></div>`
+        strHtml += `<div class="hint${i+1}" onclick = "getHint(this)" style = "display: inline-block"><img class = "hint" src = "./img/lightbulb.png"></div>`
     }
     var elHints = document.querySelector('.hints')
     elHints.innerHTML = strHtml
