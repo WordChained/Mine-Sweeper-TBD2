@@ -1,6 +1,6 @@
 body {
     background-color: rgba(0, 0, 0, 0.774);
-    background-image: url("/img/tapet.jpg");
+    background-image: url("../img/tapet.jpg");
 }
 
 .header {
